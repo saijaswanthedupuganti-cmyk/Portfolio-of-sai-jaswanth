@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai Jaswanth – UX/UI Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" aria-label="Primary">
+    <div class="container nav-inner">
+      <a href="#top" class="logo" aria-label="Home">Sai Jaswanth</a>
+      <nav id="navMenu" class="nav-links" aria-label="Section links">
+        <a href="#process">My Process</a>
+        <a href="#projects">Selected Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills & Tools</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="./resume.pdf" id="resumeBtn" aria-label="Download Resume">Resume</a>
+        <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <main id="top">
+    <section class="hero">
+      <div class="spotlight" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <article class="hero-card" id="heroTilt" tabindex="0" aria-label="Intro">
+          <h1>Designing experiences that delight & inspire.</h1>
+          <p class="lede">I’m a UX/UI designer & front-end developer crafting clean, accessible interfaces and product stories that feel effortless.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#process" class="btn btn-ghost">See My Process</a>
+          </div>
+          <aside class="hero-chip" aria-label="Quick facts">
+            <div class="stat"><b>Projects</b><span>3 case studies</span></div>
+            <div class="stat"><b>Location</b><span>Secunderabad, IN</span></div>
+            <div class="stat"><b>Availability</b><span>Internships / Full-time</span></div>
+            <a href="#contact" class="btn btn-gradient">Contact</a>
+          </aside>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== PROCESS (Horizontal stepper) ===== -->
+   <section id="process" class="section">
+  <div class="container">
+    <header class="section-header">
+      <h2>My Process</h2>
+      <p>Empathize → Define → Ideate → Prototype → Test</p>
+    </header>
+
+    <div class="process-carousel">
+      <div class="track" id="processTrack">
+        <div class="slide">
+          <div class="dot">1</div>
+          <h3>Empathize</h3>
+          <p>Interviews, observations, and journey maps to uncover real needs.</p>
+        </div>
+        <div class="slide">
+          <div class="dot">2</div>
+          <h3>Define</h3>
+          <p>Turn insights into clear problem statements & success metrics.</p>
+        </div>
+        <div class="slide">
+          <div class="dot">3</div>
+          <h3>Ideate</h3>
+          <p>Sketch & explore broadly before converging on the best path.</p>
+        </div>
+        <div class="slide">
+          <div class="dot">4</div>
+          <h3>Prototype</h3>
+          <p>Low → high-fi flows with design systems for consistency.</p>
+        </div>
+        <div class="slide">
+          <div class="dot">5</div>
+          <h3>Test</h3>
+          <p>Usability studies, A/B tests, measure & iterate.</p>
+        </div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" id="processProgress"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- ===== SELECTED PROJECTS ===== -->
+   <section id="projects" class="section">
+  <div class="container">
+    <header class="section-title">
+      <h2>Selected Projects</h2>
+      <p>Three end-to-end projects that show research depth, craft, and polish.</p>
+    </header>
+
+    <div class="grid projects">
+      <!-- Commingle -->
+      <article class="card project" tabindex="0" aria-label="Commingle case study">
+        <div class="card-media">
+          <img src="./RESOURES/Commingle (thumbnail).jpg" alt="Commingle project thumbnail" />
+        </div>
+        <div class="card-body">
+          <h3>Commingle — Community Platform</h3>
+          <p>Safe, skill-based communities with verified profiles & mentorship flows.</p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary view-more" data-modal="modal-commingle">View more</button>
+        </div>
+      </article>
+
+      <!-- LeafNote -->
+      <article class="card project" tabindex="0" aria-label="LeafNote case study">
+        <div class="card-media">
+          <img src="./RESOURES/LEAFNOTE TAMB NABNAIL.jpg" alt="LeafNote project thumbnail" />
+        </div>
+        <div class="card-body">
+          <h3>LeafNote — Next-Gen Bookstore</h3>
+          <p>Friendly shopping + reading + community with progress tracking.</p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary view-more" data-modal="modal-leafnote">View more</button>
+        </div>
+      </article>
+
+      <!-- PlantPal -->
+      <article class="card project" tabindex="0" aria-label="PlantPal case study">
+        <div class="card-media">
+          <img src="./RESOURES/plantpal(thumbinal).jpg" alt="PlantPal project thumbnail" />
+        </div>
+        <div class="card-body">
+          <h3>PlantPal — AI Plant Care</h3>
+          <p>Reminders, health scanner, and a supportive hub for plant lovers.</p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary view-more" data-modal="modal-plantpal">View more</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+    <!-- ===== ABOUT (About cards with top tabs) ===== -->
+     <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <!-- Creative board of sticky notes summarising my story, values and skills -->
+        <div class="about-board">
+          <!-- Note 1: Journey & Education -->
+          <div class="about-note">
+            <h3>My Journey</h3>
+            <p>
+              From a B.Tech in IT at Vishnu Institute of Technology (2017–2023) to
+              discovering my passion for design: I transitioned into UX/UI
+              through the Google UX Design Professional Certificate and
+              Internshala’s UI/UX Design program. Since then I've delivered
+              several web and mobile projects spanning ecommerce, social,
+              entertainment and fintech domains.
+            </p>
+          </div>
+          <!-- Note 2: Values & Strengths -->
+          <div class="about-note">
+            <h3>Values & Strengths</h3>
+            <p>
+              Empathy‑driven and detail‑oriented, I love simplifying complex
+              problems into clear user flows. I thrive in collaborative teams
+              and believe that inclusive, accessible design makes better
+              products for everyone.
+            </p>
+          </div>
+          <!-- Note 3: Tools & Expertise -->
+          <div class="about-note">
+            <h3>Tools & Expertise</h3>
+            <p>
+              Figma &amp; FigJam, Adobe Photoshop. End‑to‑end UX: research,
+              user interviews, journey mapping, wireframing & flows,
+              high‑fidelity UIs and prototyping. Skilled in building
+              responsive design systems and iterating based on user feedback.
+            </p>
+          </div>
+          <!-- Note 4: Portrait & Tagline -->
+          <div class="about-note">
+            <div class="about-portrait">
+              <img src="./RESOURES/profile.png" alt="Sai Jaswanth portrait" />
+              <h3>Sai Jaswanth</h3>
+              <p class="tagline">UX/UI Designer &amp; Developer<br />
+                Creating experiences that delight &amp; inspire
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <header class="section-title"><h2>Skills & Tools</h2></header>
+        <div class="grid skills">
+          <div class="skill"><span class="icon">🔎</span><h4>Research</h4><p>Interviews, personas, journey maps.</p></div>
+          <div class="skill"><span class="icon">🧭</span><h4>IA & Flows</h4><p>Card sorting, user flows, sitemaps.</p></div>
+          <div class="skill"><span class="icon">🧩</span><h4>Wireframes</h4><p>Low‑fi to mid‑fi exploration.</p></div>
+          <div class="skill"><span class="icon">🎨</span><h4>Visual Design</h4><p>Tokens, components, design systems.</p></div>
+          <div class="skill"><span class="icon">🧪</span><h4>Testing</h4><p>Usability tests, A/B, analytics.</p></div>
+          <div class="skill"><span class="icon">💻</span><h4>Front‑End</h4><p>HTML, CSS, JS, accessibility.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS ===== -->
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+      <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <div class="cert-grid">
+          <!-- Certification 1 -->
+          <div class="cert-card">
+            <div class="cert-icon">📜</div>
+            <h3>Foundations of UX Design</h3>
+            <p>Google · Virtual · Mar–Apr&nbsp;2025</p>
+            <a href="https://coursera.org/share/7500fe03424bc0bd15318eeb8359ff3c" class="btn secondary" target="_blank" rel="noopener">View Certificate</a>
+          </div>
+          <!-- Certification 2 -->
+          <div class="cert-card">
+            <div class="cert-icon">🎓</div>
+            <h3>UI/UX Design</h3>
+            <p>Internshala · Virtual · Feb–Aug&nbsp;2025</p>
+            <a href="https://trainings.internshala.com/s/v/3768590/9b8e7382" class="btn secondary" target="_blank" rel="noopener">View Certificate</a>
+          </div>
+          <!-- Certification 3 -->
+          <div class="cert-card">
+            <div class="cert-icon">🧠</div>
+            <h3>Start the UX Design Process</h3>
+            <p>Google · Virtual · Feb–Apr&nbsp;2025</p>
+            <a href="https://coursera.org/share/7b47a935518d405f9bda032416551c84" class="btn secondary" target="_blank" rel="noopener">View Certificate</a>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+    <!-- ===== CONTACT ===== -->
+     <section id="contact" class="contact">
+      <div class="container contact-content">
+        <h2 class="section-title">Let’s Work Together</h2>
+        <p>
+          Have an exciting project in mind or want to chat about design? I'd
+          love to hear from you!
+        </p>
+  <!-- Consolidated contact cards with phone, email, resume & LinkedIn -->
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="card-icon">📞</div>
+            <h3>Call & WhatsApp</h3>
+            <a href="tel:+919491082728">+91&nbsp;9491082728</a>
+            <a href="https://wa.me/919491082728" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          </div>
+          <div class="contact-card">
+            <div class="card-icon">✉️</div>
+            <h3>Email</h3>
+            <a href="mailto:saijaswanthedupuganti@gmail.com">saijaswanthedupuganti@gmail.com</a>
+          </div>
+          <div class="contact-card">
+            <div class="card-icon">🔗</div>
+            <h3>Resume & LinkedIn</h3>
+            <a href="resume.pdf" download>Download Resume</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">View LinkedIn</a>
+          </div>
+        </div>
+
+  <!-- ===== MODALS ===== -->
+  <div class="modal" id="modal-commingle" aria-hidden="true" role="dialog" aria-labelledby="commingleTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <h3 id="commingleTitle">Commingle — Community Platform</h3>
+      <p>Designing safe, verified communities with skill request/offer and mentorship features.</p>
+      <div class="modal-actions">
+        <a class="btn btn-primary" href="commingle_case_study.html">View Case Study</a>
+        
+         <a class="btn btn-ghost" href="./case study/Commingle  case study.pdf" id="downloadPdfCommingle">Download PDF</a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-leafnote" aria-hidden="true" role="dialog" aria-labelledby="leafnoteTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <h3 id="leafnoteTitle">LeafNote — Next-Gen Bookstore</h3>
+      <p>Warm, habit-forming reading and shopping with progress streaks and a reader community.</p>
+      <div class="modal-actions">
+        <a class="btn btn-primary" href="leafnote_case_study.html">View Case Study</a>
+     
+        <a class="btn btn-ghost" href="./case study/Next-GEN CASE STUDY.pdf" id="downloadPdfNEXT-GEN">Download PDF</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-plantpal" aria-hidden="true" role="dialog" aria-labelledby="plantpalTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <h3 id="plantpalTitle">PlantPal — AI Plant Care</h3>
+      <p>Personalized care routines, AI health scanner, and a helpful community hub.</p>
+      <div class="modal-actions">
+        <a class="btn btn-primary" href="plantpal_case_study.html">View Case Study</a>
+        <a class="btn btn-ghost" href="./case study/plantpal case study.pdf" id="downloadPdfplantpal">Download PDF</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
