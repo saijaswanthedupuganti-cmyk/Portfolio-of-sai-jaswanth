@@ -63,7 +63,7 @@ a{color:var(--text-medium); text-decoration:none}
 }
 
 /* ===== Hero ===== */
-.hero{position:relative; isolation:isolate; padding:96px 0; background: url("./hero-bg.png") ;}
+.hero{position:relative; isolation:isolate; padding:96px 0; background: url("hero-bg.png") ;}
 .spotlight{position:absolute; inset:0; pointer-events:none; background:radial-gradient(420px 420px at 50% 50%, rgba(162,89,255,.15), transparent 60%)}
 .hero-grid{display:grid; place-items:center}
 .hero-card{position:relative; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:36px; box-shadow:var(--shadow); transform-style:preserve-3d; will-change:transform}
